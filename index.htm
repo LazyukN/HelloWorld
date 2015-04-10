@@ -3,24 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Калькулятор матрицы</title>
-	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main.css">
 	<!--[if IE 8]><link rel="stylesheet" href="styleIE.css"><![endif]-->
 </head>
 <body>
 		<div id="interface" >
 		<fieldset >
 			<button  id="buttonMultiply" >Умножить матрицы</button></br>
-			<button  id="clearMatrix" ><p class="icon">&#57362</p>Очистить матрицы </button>
-			<button  id="MatrixChangePlaces"  ><p class="icon">&#57375</p>Поменять матрицы местами </button> 
+			<button  id="clearMatrix" ><span class="icon">&#57362</span>Очистить матрицы </button>
+			<button  id="MatrixChangePlaces"  ><span class="icon">&#57375</span>Поменять матрицы местами </button> 
 			<input type="radio" name="Choice"  hidden id="choiceMatrixA"  checked ><label for="choiceMatrixA">Матрица А</label>
 			<input type="radio" name="Choice" id="choiceMatrixB" ><label for="choiceMatrixB">Матрица B</label>
-			<button id="addRow"><p class="icon">&#57357</p>добавить</button>
-			<button id="addCol"><p class="icon">&#57357</p>добавить</button>
-			<button id="deleteRow"><p class="icon">&#57374</p>удалить</button>
-			<button id="deleteCol"><p class="icon">&#57374</p>удалить</button>
-			<p class="textRow">cтроку</p>
-			<p class="textCol">cтолбец</p>
+			<button id="addRow"><span class="icon">&#57357</span>добавить</button>
+			<button id="addCol"><span class="icon">&#57357</span>добавить</button>
+			<button id="deleteRow"><span class="icon">&#57374</span>удалить</button>
+			<button id="deleteCol"><span class="icon">&#57374</span>удалить</button>
+			<span class="textRow">cтроку</span>
+			<span class="textCol">cтолбец</span>
 			<div id="error">
 				Такие матрицы нельзя переможать,</br>так как количество столбцов матрица А</br>не равно количеству строк матрицы В
 			</div>
