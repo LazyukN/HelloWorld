@@ -84,7 +84,6 @@ body{
 #clearMatrix{
 	
 	text-align: center;
-	/*height: 30px;*/
 	margin-top: 56px;
 	
 
@@ -92,10 +91,10 @@ body{
 }
 button{ 
 	padding: 0 10px ;
-	border-radius: 3px;
+	border-radius: 2px;
  	background:linear-gradient(to top,#ebebeb ,#fefefe);
- 	border:1px solid #d9d9d9;
- 	border-bottom:1px solid #b2b2b2;
+ 	border:1px solid rgba(0,0,0,.35);
+ 	border-bottom:1px solid rgba(0,0,0,.5);
  	outline: none;
  	line-height:28px; 
 
