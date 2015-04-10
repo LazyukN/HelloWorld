@@ -57,7 +57,7 @@ body{
 	outline:none;
 }
 #buttonMultiply:hover{
-	background-position: 0px 323px;
+	background-position: -1px 323px;
 	
 
 }
