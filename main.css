@@ -137,7 +137,7 @@ button[disabled="disabled"]
 
 
 #MatrixChangePlaces{
-	/*height: 30px;*/
+	
 	margin:11px 0 0 0;
 	display: block;
 }
@@ -205,57 +205,41 @@ input[type="radio"]:focus + label:before
 }
 
 
-#addRow{
-	text-transform: capitalize;
-	/*width: 93px;*/
-	height: 28px;
-	margin:20px 0 0 0;
-	display: block; 
 
-}
-#addCol
+#buttonsAddDel button
 {
 	text-transform: capitalize;
-	height: 28px;
-	margin:11px 0 0 0;
-
-	
+	display:inline-block;
 }
-#deleteRow{
-	text-transform: capitalize;
-	height: 28px;
-	margin-left: 114px;
-	margin-top:-67px;
-	display: block;
-	
-	
-
-}
-#deleteCol
+#addRow,#deleteRow
 {
-	text-transform: capitalize;
-	/*width: 93px;*/
-	height: 28px;
-	margin-left: 114px;
-	margin-top: 11px;
-	display:block;
-	
-
+	margin-bottom:10px;
+}
+#addRow,#addCol
+{
+	margin-right: 10px;	
 }
 
-.textRow{
-	display:block;
-	width:45px;
-	height:8px;
-	margin:-63px 0 0 214px;   
+#buttonsAddDel
+{
+	margin-left: -11px;
+	
+}
+#buttonsAddDel span
+{
+	display:inline-block;
+}
+ .textRow{
+
+	
+	line-height: 32px; 
 }
 
 .textCol{
-	display:block;
-	width: 45px;
-	height: 8px;
-	margin: 31px 0 0 214px;
-}
+
+	
+	line-height: 32px;
+} 
 
 
 .icon{
@@ -271,11 +255,15 @@ input[type="radio"]:focus + label:before
 #entryField{
 		
 	padding-top: 16px;
-	padding-left: 400px; 
+	padding-left: 415px; 
 	min-height: 100%;
 	position: relative;
 
 
+}
+.matrixes fieldset
+{
+	margin-right: 40px;
 }
 
 #entryField fieldset{
@@ -284,7 +272,7 @@ input[type="radio"]:focus + label:before
 	border-left:2px solid #040404;
 	border-right:2px solid #040404; 
 	padding: 10px 0 0 10px;
-	margin-right: 40px;
+	/*margin-right: 40px;*/
 	margin-bottom:40px;
 	display:inline-block;
 	position:relative;

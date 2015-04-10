@@ -18,12 +18,14 @@
 			<button  id="MatrixChangePlaces"  ><span class="icon">&#57375</span>Поменять матрицы местами </button> 
 			<input type="radio" name="Choice"  hidden id="choiceMatrixA"  checked ><label for="choiceMatrixA">Матрица А</label>
 			<input type="radio" name="Choice" id="choiceMatrixB" ><label for="choiceMatrixB">Матрица B</label>
-			<button id="addRow"><span class="icon">&#57357</span>добавить</button>
-			<button id="addCol"><span class="icon">&#57357</span>добавить</button>
-			<button id="deleteRow"><span class="icon">&#57374</span>удалить</button>
-			<button id="deleteCol"><span class="icon">&#57374</span>удалить</button>
-			<span class="textRow">cтроку</span>
-			<span class="textCol">cтолбец</span>
+			<fieldset id="buttonsAddDel">
+				<button id="addRow"><span class="icon">&#57357</span>добавить</button>
+				<button id="deleteRow"><span class="icon">&#57374</span>удалить</button>
+				<span class="textRow">cтроку</span>
+				<button id="addCol"><span class="icon">&#57357</span>добавить</button>
+				<button id="deleteCol"><span class="icon">&#57374</span>удалить</button>
+				<span class="textCol">cтолбец</span>
+			</fiieldset>
 			<div id="error">
 				Такие матрицы нельзя переможать,</br>так как количество столбцов матрица А</br>не равно количеству строк матрицы В
 			</div>
@@ -32,7 +34,6 @@
 	
 	<div class="matrixes">	
 		<fieldset id="matrixResult" action="">
-			<!-- кол-во дивов это кол-во строк т.к. див отображается блочно под друг другом , а кол-во инпутов в дивах это количество столбцов так как они флот лэфт и отображаются в строчку -->
 			<div class="rowInMatrixResult">
 				<input type="text" placeholder="c1,1" disabled="disabled">
 				<input type="text" placeholder="c1,2" disabled="disabled">
