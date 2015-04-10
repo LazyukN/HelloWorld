@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Калькулятор матрицы</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="normalize.css">
+	<!--[if IE 8]><link rel="stylesheet" href="styleIE.css"><![endif]-->
+</head>
+<body>
+		<div id="interface" >
+		<fieldset >
+			<button  id="buttonMultiply" >Умножить матрицы</button></br>
+			<button  id="clearMatrix" ><p class="icon">&#57362</p>Очистить матрицы </button>
+			<button  id="MatrixChangePlaces"  ><p class="icon">&#57375</p>Поменять матрицы местами </button> 
+			<input type="radio" name="Choice"  hidden id="choiceMatrixA"  checked ><label for="choiceMatrixA">Матрица А</label>
+			<input type="radio" name="Choice" id="choiceMatrixB" ><label for="choiceMatrixB">Матрица B</label>
+			<button id="addRow"><p class="icon">&#57357</p>добавить</button>
+			<button id="addCol"><p class="icon">&#57357</p>добавить</button>
+			<button id="deleteRow"><p class="icon">&#57374</p>удалить</button>
+			<button id="deleteCol"><p class="icon">&#57374</p>удалить</button>
+			<p class="textRow">cтроку</p>
+			<p class="textCol">cтолбец</p>
+			<div id="error">
+				Такие матрицы нельзя переможать,</br>так как количество столбцов матрица А</br>не равно количеству строк матрицы В
+			</div>
+		</fieldset>
+	</div>
+	
+	<div id="entryField">
+
+	<div class="matrixes">	
+		<fieldset id="matrixResult" action="">
+			<!-- кол-во дивов это кол-во строк т.к. див отображается блочно под друг другом , а кол-во инпутов в дивах это количество столбцов так как они флот лэфт и отображаются в строчку -->
+			<div class="rowInMatrixResult">
+				<input type="text" placeholder="c1,1" disabled="disabled">
+				<input type="text" placeholder="c1,2" disabled="disabled">
+			</div>
+			<div class="rowInMatrixResult">
+				<input type="text" placeholder="c2,1" disabled="disabled">
+				<input type="text" placeholder="c2,2" disabled="disabled">
+			</div>
+		</fieldset>
+
+		<fieldset id="matrixA" class="first">
+			<div class="nameMatrixA">A</div>
+			<div class="rowInMatrixA" >
+				<input type="text" placeholder="a1,1" >
+				<input type="text" placeholder="a1,2" >
+			</div>
+			<div class="rowInMatrixA" >
+				<input type="text" placeholder="a2,1" >
+				<input type="text" placeholder="a2,2" >
+			</div>
+			
+								
+		</fieldset>
+	</div>
+	<div class="matrixes" >
+		<fieldset id="matrixB" class="second">
+			<div class="nameMatrixB">B</div>
+			<div class="rowInMatrixB">
+				<input type="text" placeholder="b1,1" value="">
+				<input type="text" placeholder="b1,2" value="">
+			</div >
+			<div class="rowInMatrixB">
+				<input type="text" placeholder="b2,1" value="">
+				<input type="text" placeholder="b2,2" value="">
+			</div >
+				
+		</fieldset>
+	</div>
+	</div>
+	 <script src="main-for-IE8.js"></script>
+	  <!-- <script src="main.js"></script> -->
+	 
+	
+	
+</body>
+</html>

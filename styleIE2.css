@@ -1,0 +1,40 @@
+
+
+#choiceMatrixA{
+	margin-top: 67px;
+	margin-right: 2px;
+	display:inline-block;
+	
+	
+
+}
+
+#choiceMatrixB{
+	
+	margin-left:25px; 
+	margin-right: 2px;
+	display: inline-block;
+	
+	
+}
+#choiceMatrixB+label
+{
+	margin-left:0; 
+	
+	
+}
+input[type="radio"] + label:before
+{
+
+	content: "";
+	display: none;
+	
+}
+
+.matrixes div:after
+{
+	content: '';
+	clear:both;
+	display: table;
+}
+
