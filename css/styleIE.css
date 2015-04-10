@@ -1,66 +1,66 @@
 
 
-#buttonMultiply{
-	margin-top:32px;
-	width:196px;
-	height:45px;
-	font-size:15px;
-	color:white;
-	cursor:pointer;
-	background-color:#bcbcbc; 
-	background-image:url(../img/buttons.png);
-	background-position: -1px 460px;
-	border:none;
-	outline:none;
-}
-
-
-
-
-}
-button{ 
-	padding: 0 10px ;
-	border-radius: 2px;
- 	background-color:#ebebeb;
- 	border:1px solid rgba(0,0,0,.35);
- 	border-bottom:1px solid rgba(0,0,0,.5);
- 	outline: none;
- 	line-height:28px; 
-
-}
-
-
-
-
-#choiceMatrixA{
-	margin-top: 67px;
-	margin-right: 2px;
-	display:inline-block;
-	
-	
-
-}
-
-#choiceMatrixB{
-	
-	margin-left:25px; 
-	margin-right: 2px;
-	display: inline-block;
-	
-	
-}
-#choiceMatrixB+label
+#buttonMultiply
 {
-	margin-left:0; 
-	
-	
-}
-input[type="radio"] + label:before
-{
+    font-size: 15px;
 
-	content: "";
-	display: none;
-	
+    width: 196px;
+    height: 45px;
+    margin-top: 32px;
+
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #bcbcbc;
+    background-image: url(../img/buttons.png);
+    background-position: -1px 460px;
+}
+
+
+
+
+button
+{
+    line-height: 28px;
+
+    padding: 0 10px ;
+
+    border: 1px solid rgba(0,0,0,.35);
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    border-radius: 2px;
+    outline: none;
+    background-color: #ebebeb;
+}
+
+
+
+
+#choiceMatrixA
+{
+    display: inline-block;
+
+    margin-top: 67px;
+    margin-right: 2px;
+}
+
+#choiceMatrixB
+{
+    display: inline-block;
+
+    margin-right: 2px;
+    margin-left: 25px;
+}
+#choiceMatrixB + label
+{
+    margin-left: 0;
+}
+input[type='radio'] + label:before
+{
+    display: none;
+
+    content: '';
 }
 
 
@@ -68,11 +68,10 @@ input[type="radio"] + label:before
 
 #interface fieldset
 {
-	border:none;
+    border: none;
 }
 
-input[type="text"]
+input[type='text']
 {
-	line-height: 32px;
+    line-height: 32px;
 }
-

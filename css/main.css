@@ -1,379 +1,396 @@
-html, body, #interface {
+html,
+body,
+#interface
+{
     height: 100%;
 }
-@font-face{
-	font-family: icons;
-    src: url('../fonts/icons.eot');
-    src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/icons.woff2') format('woff2'),
-         url('../fonts/icons.woff') format('woff'),
-         url('../fonts/shrift.ttf') format('truetype');
+@font-face
+{
+    font-family: icons;
     font-weight: normal;
     font-style: normal;
+
+    src: url('../fonts/icons.eot');
+    src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icons.woff2') format('woff2'),
+    url('../fonts/icons.woff') format('woff'),
+    url('../fonts/shrift.ttf') format('truetype');
 }
-body{
-	font:14px "Segoe UI", "Arial",'sans-serif';
-	color: #404040;
-	line-height: 20px;
+body
+{
+    font: 14px 'Segoe UI', 'Arial','sans-serif';
+    line-height: 20px;
+
+    color: #404040;
 }
-#interface,#buttonMultiply,#error{
-
-	-webkit-transition:background-color .3s ease-in-out;
-	-moz-transition:background-color .3s ease-in-out;
-	-ms-transition:background-color .3s ease-in-out;
+#interface,
+#buttonMultiply,
+#error
+{
+    -webkit-transition: background-color .3s ease-in-out;
+       -moz-transition: background-color .3s ease-in-out;
+        -ms-transition: background-color .3s ease-in-out;
 }
 
-#interface {
+#interface
+{
+    position: absolute;
+    top: 0;
+    left: 0;
 
-	background: #bcbcbc;
-	width: 340px;
-	display: block;
-	padding-left:44px;
-	margin-right:3%;
-	position: absolute;
-	left:0;
-	top: 0;
+    display: block;
 
+    width: 340px;
+    margin-right: 3%;
+    padding-left: 44px;
 
-	
+    background: #bcbcbc;
 }
 #interface fieldset
 {
-	border:none;
+    border: none;
 }
-#buttonMultiply{
-	margin-top:32px;
-	width:196px;
-	height:45px;
-	font-size:15px;
-	color:white;
-	cursor:pointer;
-	background-color:#bcbcbc; 
-	background-image:url(../img/buttons.png) ;
-	background-position: -1px 460px;
-	border: none;
-	outline:none;
-}
-#buttonMultiply:hover{
-	background-position: -1px 323px;
-	
-
-}
-#buttonMultiply[disabled="disabled"]
+#buttonMultiply
 {
-	background-position: -1px 411px;
-	cursor: default;
+    font-size: 15px;
+
+    width: 196px;
+    height: 45px;
+    margin-top: 32px;
+
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #bcbcbc;
+    background-image: url(../img/buttons.png) ;
+    background-position: -1px 460px;
+}
+#buttonMultiply:hover
+{
+    background-position: -1px 323px;
+}
+#buttonMultiply[disabled='disabled']
+{
+    cursor: default;
+
+    background-position: -1px 411px;
 }
 #buttonMultiply:focus
 {
-	background-position:-1px 368px;
-	outline: none;
-	box-shadow: none;
-	-webkit-box-shadow: none;
+    outline: none;
+    background-position: -1px 368px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 #buttonMultiply:active
 {
-	background-position: -1px 277px;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-
+    background-position: -1px 277px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
-#clearMatrix{
-	
-	text-align: center;
-	margin-top: 56px;
-	
-
-
-}
-button{ 
-	padding: 0 10px ;
-	border-radius: 2px;
- 	background:linear-gradient(to top,#ebebeb ,#fefefe);
- 	border:1px solid rgba(0,0,0,.35);
- 	border-bottom:1px solid rgba(0,0,0,.5);
- 	outline: none;
- 	line-height:28px; 
-
-}
-button:hover{
-
- 	background:linear-gradient(to top,#dedede,#f2f2f2);
- 	-webkit-background:linear-gradient(to top,#dedede,#f2f2f2);
-
-}
-
-button:focus{
-	outline: 0;
- 	background:linear-gradient(to top,#ebebeb,#fefefe);
- 	border:1px solid #5199db;
- 	box-shadow:0 0 0 1px #5199db;
- 	-webkit-box-shadow:0 0 0 1px #5199db;
-}
-
-button:active{
-	
-	outline: 0;
- 	background:#d9d9d9;
- 	border:1px solid #cccccc;
- 	border-top:1px solid #a6a6a6;
- 	box-shadow:inset 0  0 6px 2px rgba(0,0,0,.15);
- 	-webkit-box-shadow:inset 0  0 6px 2px rgba(0,0,0,.15);
-	
-
-}
-
-
-button[disabled="disabled"]
+#clearMatrix
 {
-	cursor: default;
-	background: #f2f2f2;
-	border:1px solid rgba(0,0,0,.15);
-	color:#a0a0a0;
+    margin-top: 56px;
+
+    text-align: center;
 }
-
-
-#MatrixChangePlaces{
-	
-	margin:11px 0 0 0;
-	display: block;
-}
-
-#choiceMatrixA{
-	margin-top: 67px;
-	margin-right: 2px;
-	display: none;
-	
-	
-
-}
-
-#choiceMatrixB{
-	
-	margin-left:25px; 
-	margin-right: 2px;
-	display: none;
-		
-}
-
-
-#choiceMatrixB+label
+button
 {
-	margin-left:20px; 
-	
-	
+    line-height: 28px;
+
+    padding: 0 10px ;
+
+    border: 1px solid rgba(0,0,0,.35);
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    border-radius: 2px;
+    outline: none;
+    background: linear-gradient(to top,#ebebeb ,#fefefe);
+}
+button:hover
+{
+            background: linear-gradient(to top,#dedede,#f2f2f2);
+
+    -webkit-background: linear-gradient(to top,#dedede,#f2f2f2);
+}
+
+button:focus
+{
+    border: 1px solid #5199db;
+    outline: 0;
+    background: linear-gradient(to top,#ebebeb,#fefefe);
+    -webkit-box-shadow: 0 0 0 1px #5199db;
+            box-shadow: 0 0 0 1px #5199db;
+}
+
+button:active
+{
+    border: 1px solid #ccc;
+    border-top: 1px solid #a6a6a6;
+    outline: 0;
+    background: #d9d9d9;
+    -webkit-box-shadow: inset 0  0 6px 2px rgba(0,0,0,.15);
+            box-shadow: inset 0  0 6px 2px rgba(0,0,0,.15);
 }
 
 
-input[type="radio"]+label
+button[disabled='disabled']
 {
-	
-	cursor: pointer;
+    cursor: default;
 
-
+    color: #a0a0a0;
+    border: 1px solid rgba(0,0,0,.15);
+    background: #f2f2f2;
 }
-input[type="radio"] + label:before
-{
 
-	content: "";
+
+#MatrixChangePlaces
+{
+    display: block;
+
+    margin: 11px 0 0 0;
+}
+
+#choiceMatrixA
+{
+    display: none;
+
+    margin-top: 67px;
+    margin-right: 2px;
+}
+
+#choiceMatrixB
+{
+    display: none;
+
+    margin-right: 2px;
+    margin-left: 25px;
+}
+
+
+#choiceMatrixB + label
+{
+    margin-left: 20px;
+}
+
+
+input[type='radio'] + label
+{
+    cursor: pointer;
+}
+input[type='radio'] + label:before
+{
     display: inline-block;
-    height: 16px;
+
     width: 21px;
+    height: 16px;
+    margin-top: 67px;
+    margin-bottom: -2px;
+
+    content: '';
+
     background-image: url(../img/buttons.png);
-    background-position: -201px -4px;
     background-repeat: no-repeat;
-    margin-top:67px;
-    margin-bottom:-2px; 
-	
+    background-position: -201px -4px;
 }
-input[type="radio"]:checked + label:before
+input[type='radio']:checked + label:before
 {
-	background-position: -201px -88px;
+    background-position: -201px -88px;
 }
-input[type="radio"]:disabled + label:before
+input[type='radio']:disabled + label:before
 {
-	background-position: -201px -26px;
-
+    background-position: -201px -26px;
 }
-input[type="radio"]:focus + label:before
+input[type='radio']:focus + label:before
 {
-	background-position: -200px -45px;
-
+    background-position: -200px -45px;
 }
 
 
 
 #buttonsAddDel button
 {
-	text-transform: capitalize;
-	display:inline-block;
+    display: inline-block;
+
+    text-transform: capitalize;
 }
-#addRow,#deleteRow
+#addRow,
+#deleteRow
 {
-	margin-bottom:10px;
+    margin-bottom: 10px;
 }
-#addRow,#addCol
+#addRow,
+#addCol
 {
-	margin-right: 10px;	
+    margin-right: 10px;
 }
 
 #buttonsAddDel
 {
-	margin-left: -11px;
-	
+    margin-left: -11px;
 }
 #buttonsAddDel span
 {
-	display:inline-block;
+    display: inline-block;
 }
- .textRow{
-
-	
-	line-height: 32px; 
+.textRow
+{
+    line-height: 32px;
 }
 
-.textCol{
-
-	
-	line-height: 32px;
-} 
-
-
-.icon{
-	margin-top: 0;
-	font-family: icons;
-	font-size: 14px;
-	float: left;
-	padding-right:4px; 
-	display:inline-block;
+.textCol
+{
+    line-height: 32px;
 }
 
 
-#entryField{
-		
-	padding-top: 16px;
-	padding-left: 415px; 
-	min-height: 100%;
-	position: relative;
+.icon
+{
+    font-family: icons;
+    font-size: 14px;
+
+    display: inline-block;
+    float: left;
+
+    margin-top: 0;
+    padding-right: 4px;
+}
 
 
+#entryField
+{
+    position: relative;
+
+    min-height: 100%;
+    padding-top: 16px;
+    padding-left: 415px;
 }
 .matrixes fieldset
 {
-	margin-right: 40px;
+    margin-right: 40px;
 }
 
-#entryField fieldset{
-	
-	border:1px solid #fff;
-	border-left:2px solid #040404;
-	border-right:2px solid #040404; 
-	padding: 10px 0 0 10px;
-	/*margin-right: 40px;*/
-	margin-bottom:40px;
-	display:inline-block;
-	position:relative;
-	
+#entryField fieldset
+{
+    position: relative;
 
-	
-	
+    display: inline-block;
+    /*margin-right: 40px;*/
+
+    margin-bottom: 40px;
+    padding: 10px 0 0 10px;
+
+    border: 1px solid #fff;
+    border-right: 2px solid #040404;
+    border-left: 2px solid #040404;
 }
 
 .matrixes fieldset:before,
 .matrixes fieldset:after
 {
-	position: absolute;
-	top: -2px;
-	bottom: -2px;
-	height: 100%;
-	
-	display: block;
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
 
-	width: 10px;
+    display: block;
 
-	content: '';
+    width: 10px;
+    height: 100%;
 
-	border-top: 2px solid #040404;
-	border-bottom: 2px solid #040404;
+    content: '';
+
+    border-top: 2px solid #040404;
+    border-bottom: 2px solid #040404;
 }
 
 .matrixes fieldset:before
 {
-	left: -2px;
+    left: -2px;
 }
 
 .matrixes fieldset:after
 {
-	right: -2px;
+    right: -2px;
 }
 
 
-input[type="text"]{
-	border:1px solid #d9d9d9;
-	border-top:1px solid #b2b2b2;
-	background: #fff;
-	-webkit-box-shadow:inset 0 0 6px 1px rgba(0,0,0,0.05);
-	width: 38px;
-	height: 38px;
-	margin:0 11px 11px 0;
-	float:left;
-	display: block;
-	text-align: center;
-}
-input[type="text"]:focus
+input[type='text']
 {
-	outline: 0;
- 	border:1px solid #5199db;
- 	box-shadow:0 0 0 1px #5199db;
- 	-webkit-box-shadow:0 0 0 1px #5199db;
+    display: block;
+    float: left;
+
+    width: 38px;
+    height: 38px;
+    margin: 0 11px 11px 0;
+
+    text-align: center;
+
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #b2b2b2;
+    background: #fff;
+    -webkit-box-shadow: inset 0 0 6px 1px rgba(0,0,0,.05);
+}
+input[type='text']:focus
+{
+    border: 1px solid #5199db;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 1px #5199db;
+            box-shadow: 0 0 0 1px #5199db;
 }
 
-#matrixResult input{
-	background:#f2f2f2;
-	border:1px solid #b2b2b2; 
+#matrixResult input
+{
+    border: 1px solid #b2b2b2;
+    background: #f2f2f2;
 }
 
 .matrixes
 {
-	display: block;	
-	white-space: nowrap;
+    display: block;
 
+    white-space: nowrap;
 }
 
-.nameMatrixA{
-	display:block;
-	position:absolute;
-	right:-35px;
-	top:45%;
-	font-size:2rem;
+.nameMatrixA
+{
+    font-size: 2rem;
+
+    position: absolute;
+    top: 45%;
+    right: -35px;
+
+    display: block;
 }
-.nameMatrixB{
-	
-	display:block;
-	position:absolute;
-	bottom:-24px;
-	right: 45%;
-	font-size:2rem;
+.nameMatrixB
+{
+    font-size: 2rem;
+
+    position: absolute;
+    right: 45%;
+    bottom: -24px;
+
+    display: block;
 }
 
 #error
 {
-	margin:53px 0 0 0 ;
-	color:#da0902; 
-	display: none;
+    display: none;
+
+    margin: 53px 0 0 0 ;
+
+    color: #da0902;
 }
 
 .matrixes div:after
 {
-	content: '';
-	clear:both;
-	display: table;
+    display: table;
+    clear: both;
+
+    content: '';
 }
 #interface fieldset
 {
-	border: none;
+    border: none;
 }
-
-
-	
