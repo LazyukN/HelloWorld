@@ -13,30 +13,7 @@
 	border:none;
 	outline:none;
 }
-#buttonMultiply:hover{
-	background-position: -1px 323px;
-	
 
-}
-#buttonMultiply[disabled="disabled"]
-{
-	background-position: -1px 411px;
-	cursor: default;
-}
-#buttonMultiply:focus
-{
-	background-position:-1px 368px;
-	outline: none;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-}
-#buttonMultiply:active
-{
-	background-position: -1px 277px;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-
-}
 
 
 
@@ -94,4 +71,8 @@ input[type="radio"] + label:before
 	border:none;
 }
 
+input[type="text"]
+{
+	line-height: 32px;
+}
 

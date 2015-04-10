@@ -175,10 +175,6 @@ function addCol(colMatrix,indexNameCel)
 
 
 
-
-
-
-
 function delRow(rowMatrix)
 {
 	var RowMatrix=document.querySelectorAll("."+rowMatrix);
