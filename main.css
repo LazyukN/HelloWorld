@@ -1,7 +1,5 @@
 html, body, #interface {
     height: 100%;
-    
-
 }
 @font-face{
 	font-family: icons;
@@ -29,11 +27,15 @@ body{
 
 	background: #bcbcbc;
 	min-width: 340px;
-	min-height: 400px;
 	width: 25%;
-	float:left;
+	/*float:left;*/
+	display: block;
 	padding-left:44px;
 	margin-right:3%;
+	position: absolute;
+	left:0;
+	top: 0;
+
 
 	
 }
@@ -44,18 +46,18 @@ body{
 #buttonMultiply{
 	margin-top:32px;
 	width:196px;
-	height:40px;
+	height:45px;
 	font-size:15px;
 	color:white;
 	cursor:pointer;
 	background-color:#bcbcbc; 
 	background-image:url(buttons.png) ;
-	background-position: -1px 457px;
+	background-position: -1px 460px;
 	border: none;
 	outline:none;
 }
 #buttonMultiply:hover{
-	background-position: -1px 320px;
+	background-position: 0px 323px;
 	
 
 }
@@ -66,14 +68,14 @@ body{
 }
 #buttonMultiply:focus
 {
-	background-position:-1px 365px;
+	background-position:-1px 368px;
 	outline: none;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
 #buttonMultiply:active
 {
-	background-position: -1px 274px;
+	background-position: -1px 277px;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 
@@ -268,11 +270,11 @@ input[type="radio"]:focus + label:before
 
 
 #entryField{
-	
-	
+		
 	padding-top: 16px;
-	
-
+	padding-left: 400px; 
+	min-height: 100%;
+	position: relative;
 
 
 }
@@ -383,7 +385,10 @@ input[type="text"]:focus
 	clear:both;
 	display: table;
 }
-
+#interface fieldset
+{
+	border: none;
+}
 
 
 	
