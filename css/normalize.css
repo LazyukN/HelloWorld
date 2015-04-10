@@ -421,6 +421,7 @@ table {
   border-spacing: 0;
 }
 
+fieldset,
 td,
 th {
   padding: 0;

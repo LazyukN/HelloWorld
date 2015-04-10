@@ -4,6 +4,7 @@ body,
 {
     height: 100%;
 }
+
 @font-face
 {
     font-family: icons;
@@ -16,6 +17,7 @@ body,
     url('../fonts/icons.woff') format('woff'),
     url('../fonts/shrift.ttf') format('truetype');
 }
+
 body
 {
     font: 14px 'Segoe UI', 'Arial','sans-serif';
@@ -23,6 +25,7 @@ body
 
     color: #404040;
 }
+
 #interface,
 #buttonMultiply,
 #error
@@ -40,23 +43,23 @@ body
 
     display: block;
 
-    width: 340px;
-    margin-right: 3%;
-    padding-left: 44px;
+    width: 303px;
+    padding: 18px 0 18px 29px;
 
     background: #bcbcbc;
 }
+
 #interface fieldset
 {
     border: none;
 }
+
 #buttonMultiply
 {
     font-size: 15px;
 
     width: 196px;
     height: 45px;
-    margin-top: 32px;
 
     cursor: pointer;
 
@@ -67,16 +70,19 @@ body
     background-image: url(../img/buttons.png) ;
     background-position: -1px 460px;
 }
+
 #buttonMultiply:hover
 {
     background-position: -1px 323px;
 }
+
 #buttonMultiply[disabled='disabled']
 {
     cursor: default;
 
     background-position: -1px 411px;
 }
+
 #buttonMultiply:focus
 {
     outline: none;
@@ -84,6 +90,7 @@ body
     -webkit-box-shadow: none;
             box-shadow: none;
 }
+
 #buttonMultiply:active
 {
     background-position: -1px 277px;
@@ -97,18 +104,21 @@ body
 
     text-align: center;
 }
+
 button
 {
     line-height: 28px;
 
-    padding: 0 10px ;
+    padding: 0 6px ;
 
     border: 1px solid rgba(0,0,0,.35);
     border-bottom: 1px solid rgba(0,0,0,.5);
     border-radius: 2px;
     outline: none;
+    margin: 10px 10px 0 0;
     background: linear-gradient(to top,#ebebeb ,#fefefe);
 }
+
 button:hover
 {
             background: linear-gradient(to top,#dedede,#f2f2f2);
@@ -145,12 +155,9 @@ button[disabled='disabled']
     background: #f2f2f2;
 }
 
-
 #MatrixChangePlaces
 {
     display: block;
-
-    margin: 11px 0 0 0;
 }
 
 #choiceMatrixA
@@ -169,17 +176,16 @@ button[disabled='disabled']
     margin-left: 25px;
 }
 
-
 #choiceMatrixB + label
 {
     margin-left: 20px;
 }
 
-
 input[type='radio'] + label
 {
     cursor: pointer;
 }
+
 input[type='radio'] + label:before
 {
     display: inline-block;
@@ -195,20 +201,21 @@ input[type='radio'] + label:before
     background-repeat: no-repeat;
     background-position: -201px -4px;
 }
+
 input[type='radio']:checked + label:before
 {
     background-position: -201px -88px;
 }
+
 input[type='radio']:disabled + label:before
 {
     background-position: -201px -26px;
 }
+
 input[type='radio']:focus + label:before
 {
     background-position: -200px -45px;
 }
-
-
 
 #buttonsAddDel button
 {
@@ -216,21 +223,7 @@ input[type='radio']:focus + label:before
 
     text-transform: capitalize;
 }
-#addRow,
-#deleteRow
-{
-    margin-bottom: 10px;
-}
-#addRow,
-#addCol
-{
-    margin-right: 10px;
-}
 
-#buttonsAddDel
-{
-    margin-left: -11px;
-}
 #buttonsAddDel span
 {
     display: inline-block;
@@ -265,21 +258,16 @@ input[type='radio']:focus + label:before
 
     min-height: 100%;
     padding-top: 16px;
-    padding-left: 415px;
+    padding-left: 370px;
 }
+
 .matrixes fieldset
 {
-    margin-right: 40px;
-}
-
-#entryField fieldset
-{
     position: relative;
-
     display: inline-block;
-    /*margin-right: 40px;*/
 
-    margin-bottom: 40px;
+    margin-right: 33px;
+    margin-bottom: 37px;
     padding: 10px 0 0 10px;
 
     border: 1px solid #fff;
@@ -323,7 +311,7 @@ input[type='text']
 
     width: 38px;
     height: 38px;
-    margin: 0 11px 11px 0;
+    margin: 0 7px 7px 0;
 
     text-align: center;
 
@@ -332,6 +320,7 @@ input[type='text']
     background: #fff;
     -webkit-box-shadow: inset 0 0 6px 1px rgba(0,0,0,.05);
 }
+
 input[type='text']:focus
 {
     border: 1px solid #5199db;
@@ -363,6 +352,7 @@ input[type='text']:focus
 
     display: block;
 }
+
 .nameMatrixB
 {
     font-size: 2rem;
@@ -390,6 +380,7 @@ input[type='text']:focus
 
     content: '';
 }
+
 #interface fieldset
 {
     border: none;

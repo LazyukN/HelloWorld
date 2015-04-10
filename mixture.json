@@ -1,0 +1,37 @@
+{
+  "convertHtml": {
+    "relativePaths": false
+  },
+  "debug": false,
+  "domain": null,
+  "lintScripts": false,
+  "modelSource": null,
+  "projectDescription": "Kontur",
+  "projectName": "Lazyuk",
+  "publishedId": null,
+  "sass": {
+    "outputStyle": "nested",
+    "sourceMap": true,
+    "cache": false,
+    "lineNumbers": false,
+    "debugInfo": false,
+    "globbing": false,
+    "useLibSass": true
+  },
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "type": "simple",
+  "useCompass": false,
+  "optimiseImages": true,
+  "autoPrefixer": {
+    "active": true,
+    "sourceMap": true,
+    "browsers": [
+        "last 1 version", 
+        "> 1%", 
+        "ie 8", 
+        "ie 7"
+    ]
+  }
+}

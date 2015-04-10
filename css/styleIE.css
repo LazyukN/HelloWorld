@@ -1,5 +1,3 @@
-
-
 #buttonMultiply
 {
     font-size: 15px;
@@ -18,24 +16,18 @@
     background-position: -1px 460px;
 }
 
-
-
-
 button
 {
     line-height: 28px;
 
     padding: 0 10px ;
 
-    border: 1px solid rgba(0,0,0,.35);
-    border-bottom: 1px solid rgba(0,0,0,.5);
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #999;
     border-radius: 2px;
     outline: none;
     background-color: #ebebeb;
 }
-
-
-
 
 #choiceMatrixA
 {
@@ -52,19 +44,18 @@ button
     margin-right: 2px;
     margin-left: 25px;
 }
+
 #choiceMatrixB + label
 {
     margin-left: 0;
 }
+
 input[type='radio'] + label:before
 {
     display: none;
 
     content: '';
 }
-
-
-
 
 #interface fieldset
 {
