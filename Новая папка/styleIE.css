@@ -1,0 +1,97 @@
+
+
+#buttonMultiply{
+	margin-top:32px;
+	width:196px;
+	height:45px;
+	font-size:15px;
+	color:white;
+	cursor:pointer;
+	background-color:#bcbcbc; 
+	background-image:url(img/buttons.png) ;
+	background-position: -1px 460px;
+	border: none;
+	outline:none;
+}
+#buttonMultiply:hover{
+	background-position: -1px 323px;
+	
+
+}
+#buttonMultiply[disabled="disabled"]
+{
+	background-position: -1px 411px;
+	cursor: default;
+}
+#buttonMultiply:focus
+{
+	background-position:-1px 368px;
+	outline: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#buttonMultiply:active
+{
+	background-position: -1px 277px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+
+}
+
+
+
+}
+button{ 
+	padding: 0 10px ;
+	border-radius: 2px;
+ 	background-color:#ebebeb;
+ 	border:1px solid rgba(0,0,0,.35);
+ 	border-bottom:1px solid rgba(0,0,0,.5);
+ 	outline: none;
+ 	line-height:28px; 
+
+}
+
+
+
+
+#choiceMatrixA{
+	margin-top: 67px;
+	margin-right: 2px;
+	display:inline-block;
+	
+	
+
+}
+
+#choiceMatrixB{
+	
+	margin-left:25px; 
+	margin-right: 2px;
+	display: inline-block;
+	
+	
+}
+#choiceMatrixB+label
+{
+	margin-left:0; 
+	
+	
+}
+input[type="radio"] + label:before
+{
+
+	content: "";
+	display: none;
+	
+}
+
+
+
+
+#interface fieldset
+{
+	border:none;
+}
+
+

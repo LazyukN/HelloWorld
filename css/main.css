@@ -1,10 +1,15 @@
 html, body, #interface {
     height: 100%;
-
 }
 @font-face{
-	font-family:icons; 
-	src:url(shrift.ttf);
+	font-family: icons;
+    src: url('../fonts/icons.eot');
+    src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/icons.woff2') format('woff2'),
+         url('../fonts/icons.woff') format('woff'),
+         url('../fonts/shrift.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 body{
 	font:14px "Segoe UI", "Arial",'sans-serif';
@@ -14,18 +19,21 @@ body{
 #interface,#buttonMultiply,#error{
 
 	-webkit-transition:background-color .3s ease-in-out;
-	
+	-moz-transition:background-color .3s ease-in-out;
+	-ms-transition:background-color .3s ease-in-out;
 }
 
 #interface {
 
 	background: #bcbcbc;
-	min-width: 340px;
-	min-height: 373px;
-	width: 25%;
-	float:left;
+	width: 340px;
+	display: block;
 	padding-left:44px;
 	margin-right:3%;
+	position: absolute;
+	left:0;
+	top: 0;
+
 
 	
 }
@@ -36,18 +44,18 @@ body{
 #buttonMultiply{
 	margin-top:32px;
 	width:196px;
-	height:40px;
+	height:45px;
 	font-size:15px;
 	color:white;
 	cursor:pointer;
 	background-color:#bcbcbc; 
-	background-image:url(buttons.png) ;
-	background-position: -1px 457px;
+	background-image:url(../img/buttons.png) ;
+	background-position: -1px 460px;
 	border: none;
 	outline:none;
 }
 #buttonMultiply:hover{
-	background-position: -1px 320px;
+	background-position: -1px 323px;
 	
 
 }
@@ -58,34 +66,35 @@ body{
 }
 #buttonMultiply:focus
 {
-	background-position:-1px 365px;
+	background-position:-1px 368px;
 	outline: none;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
 #buttonMultiply:active
 {
-	background-position: -1px 274px;
+	background-position: -1px 277px;
 	box-shadow: none;
 	-webkit-box-shadow: none;
+
 }
 
 #clearMatrix{
 	
 	text-align: center;
-	height: 30px;
 	margin-top: 56px;
 	
 
 
 }
 button{ 
-	padding: auto 10px ;
-	border-radius: 3px;
+	padding: 0 10px ;
+	border-radius: 2px;
  	background:linear-gradient(to top,#ebebeb ,#fefefe);
- 	border:1px solid #d9d9d9;
- 	border-bottom:1px solid #b2b2b2;
+ 	border:1px solid rgba(0,0,0,.35);
+ 	border-bottom:1px solid rgba(0,0,0,.5);
  	outline: none;
+ 	line-height:28px; 
 
 }
 button:hover{
@@ -126,7 +135,7 @@ button[disabled="disabled"]
 
 
 #MatrixChangePlaces{
-	height: 30px;
+	
 	margin:11px 0 0 0;
 	display: block;
 }
@@ -151,7 +160,7 @@ button[disabled="disabled"]
 
 #choiceMatrixB+label
 {
-	margin-left:22px; 
+	margin-left:20px; 
 	
 	
 }
@@ -171,7 +180,7 @@ input[type="radio"] + label:before
     display: inline-block;
     height: 16px;
     width: 21px;
-    background-image: url(buttons.png);
+    background-image: url(../img/buttons.png);
     background-position: -201px -4px;
     background-repeat: no-repeat;
     margin-top:67px;
@@ -194,57 +203,41 @@ input[type="radio"]:focus + label:before
 }
 
 
-#addRow{
-	text-transform: capitalize;
-	/*width: 93px;*/
-	height: 28px;
-	margin:20px 0 0 0;
-	display: block; 
 
-}
-#addCol
+#buttonsAddDel button
 {
 	text-transform: capitalize;
-	height: 28px;
-	margin:11px 0 0 0;
-
-	
+	display:inline-block;
 }
-#deleteRow{
-	text-transform: capitalize;
-	height: 28px;
-	margin-left: 114px;
-	margin-top:-67px;
-	display: block;
-	
-	
-
-}
-#deleteCol
+#addRow,#deleteRow
 {
-	text-transform: capitalize;
-	/*width: 93px;*/
-	height: 28px;
-	margin-left: 114px;
-	margin-top: 11px;
-	display:block;
-	
-
+	margin-bottom:10px;
+}
+#addRow,#addCol
+{
+	margin-right: 10px;	
 }
 
-.textRow{
-	display:block;
-	width:45px;
-	height:8px;
-	margin:-63px 0 0 214px;   
+#buttonsAddDel
+{
+	margin-left: -11px;
+	
+}
+#buttonsAddDel span
+{
+	display:inline-block;
+}
+ .textRow{
+
+	
+	line-height: 32px; 
 }
 
 .textCol{
-	display:block;
-	width: 45px;
-	height: 8px;
-	margin: 31px 0 0 214px;
-}
+
+	
+	line-height: 32px;
+} 
 
 
 .icon{
@@ -258,13 +251,17 @@ input[type="radio"]:focus + label:before
 
 
 #entryField{
-	
-	
+		
 	padding-top: 16px;
-	
+	padding-left: 415px; 
+	min-height: 100%;
+	position: relative;
 
 
-
+}
+.matrixes fieldset
+{
+	margin-right: 40px;
 }
 
 #entryField fieldset{
@@ -273,7 +270,7 @@ input[type="radio"]:focus + label:before
 	border-left:2px solid #040404;
 	border-right:2px solid #040404; 
 	padding: 10px 0 0 10px;
-	margin-right: 40px;
+	/*margin-right: 40px;*/
 	margin-bottom:40px;
 	display:inline-block;
 	position:relative;
@@ -282,38 +279,37 @@ input[type="radio"]:focus + label:before
 	
 	
 }
-fieldset[id^="matrix"]:before{
-	content: '';
-	margin-left:-2px;
-	width:10px;
-	border-top:2px solid #040404;
-	border-bottom:2px solid #040404;
-	display:block;
-	position:absolute;
-	top:-2px;
-	left:0;
-	bottom:-2px;
 
-}
-
-fieldset[id^="matrix"]:after
+.matrixes fieldset:before,
+.matrixes fieldset:after
 {
-	content: '';
-	margin-right:-2px;
-	width:10px;
-	border-top:2px solid #040404;
-	border-bottom:2px solid #040404;
-	display:block;
-	position:absolute;
-	top:-2px;
-	right:0;
-	bottom:-2px;
+	position: absolute;
+	top: -2px;
+	bottom: -2px;
+	height: 100%;
+	
+	display: block;
 
+	width: 10px;
+
+	content: '';
+
+	border-top: 2px solid #040404;
+	border-bottom: 2px solid #040404;
+}
+
+.matrixes fieldset:before
+{
+	left: -2px;
+}
+
+.matrixes fieldset:after
+{
+	right: -2px;
 }
 
 
-
-input[type|="text"]{
+input[type="text"]{
 	border:1px solid #d9d9d9;
 	border-top:1px solid #b2b2b2;
 	background: #fff;
@@ -325,7 +321,7 @@ input[type|="text"]{
 	display: block;
 	text-align: center;
 }
-input[type|="text"]:focus
+input[type="text"]:focus
 {
 	outline: 0;
  	border:1px solid #5199db;
@@ -341,6 +337,7 @@ input[type|="text"]:focus
 .matrixes
 {
 	display: block;	
+	white-space: nowrap;
 
 }
 
@@ -355,7 +352,7 @@ input[type|="text"]:focus
 	
 	display:block;
 	position:absolute;
-	top:100%;
+	bottom:-24px;
 	right: 45%;
 	font-size:2rem;
 }
@@ -367,11 +364,16 @@ input[type|="text"]:focus
 	display: none;
 }
 
-div[class^="rowInMatrix"]
+.matrixes div:after
 {
 	content: '';
 	clear:both;
+	display: table;
+}
+#interface fieldset
+{
+	border: none;
 }
 
 
-
+	
